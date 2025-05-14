@@ -107,11 +107,11 @@ To test the API, you can use the provided Postman collection, which includes pre
 - Ensure MongoDB is running and accessible via the `MONGO_URI`.
 - Use strong values for `JWT_SECRET` and admin credentials in production.
 - Regularly update dependencies to address security vulnerabilities.
-
-### .ENV
-PORT=5000
-MONGO_URI=mongodb+srv://muhammedjunaid2016:mHIAjmDq26PdEbo5@machinetest.ow4qovg.mongodb.net/
-JWT_SECRET=asdfghjwertyxcv234ecvbn345cvertcv345xcv34xcv34rcv
-NODE_ENV=production
-ADMIN_EMAIL=admin@gmail.com
-ADMIN_PASSWORD=admin123
+---
+### ENV
+- PORT=5000.
+- NODE_ENV=production.
+- ADMIN_EMAIL=admin@gmail.com.
+- ADMIN_PASSWORD=admin123.
+- MONGO_URI=mongodb+srv://muhammedjunaid2016:mHIAjmDq26PdEbo5@machinetest.ow4qovg.mongodb.net/.
+- JWT_SECRET=asdfghjwertyxcv234ecvbn345cvertcv345xcv34xcv34rcv.
