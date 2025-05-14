@@ -35,7 +35,7 @@ export const registerUser = async (req, res) => {
       //hash password
       const hashedPassword = await bcrypt.hash(password, 10);
   console.log("Hashed password:", hashedPassword);
-      //generate userId based on role
+        //generate userId
       let userId =  await generateId(role);
 
       console.log("Generated userId:", userId);
@@ -85,7 +85,7 @@ export const registerUser = async (req, res) => {
         });
       }
   
-      //admin Login (Hardcoded)
+      //admin Login
       if (email === process.env.ADMIN_EMAIL) {
         if (password !== process.env.ADMIN_PASSWORD) {
           return res.status(400).json({

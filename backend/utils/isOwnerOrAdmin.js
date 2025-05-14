@@ -13,7 +13,7 @@ export const isOwnerOrAdmin = async (req, res, next) => {
 
     // Check if user is the owner or an admin
     if (product.createdBy.toString() === userId || userRole === "admin") {
-      req.product = product; // Optional: attach product to request
+      req.product = product;
       return next();
     }
 
